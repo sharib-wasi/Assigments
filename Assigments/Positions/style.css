@@ -1,0 +1,150 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Times New Roman', Times, serif;
+}
+body{
+    min-height: 100vh;
+}
+.header{
+    background-image: linear-gradient(to right,white,red,rgb(177, 0, 0));
+    position: fixed;
+    /* Yh Pochna Hai, top or left */
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 7px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    border: 1px solid black;
+}
+.logo{
+    font-size: 40px;
+    font-weight: 1000;
+    color: red;
+    text-decoration: none;
+    -webkit-text-stroke: 0.5px white;
+}
+.navbar a{
+    font-size: 27px;
+    color: black;
+    text-decoration: none;
+    font-weight: 700;
+    margin: 5px;
+    position: relative;
+    top: 10px;
+    left: 30px;
+}
+.icons{
+    font-size: 30px;
+    color: black;
+    cursor: pointer;
+}
+.sign{
+    background-image: linear-gradient(to bottom,white,red);
+    color: black;
+    border: 1px solid black;
+    border-radius: 7px;
+    font-size: 17px;
+    padding: 4px;
+    position: relative;
+    left: 35px;
+    top: 10px;
+    cursor: pointer;
+}
+.mycart{
+    background-image: linear-gradient(to bottom,white,red);
+    color: black;
+    position:relative;
+    left: 40px;
+    top: 10px;
+    padding: 4px;
+    border: 1px solid black;
+    border-radius: 7px;
+    font-size: 17px;
+    cursor: pointer;
+}
+.navbar a:after{
+    /* Yh Pochna Hai,Content */
+    content: "";
+    position: absolute;
+    background-color: black;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -4px;
+    transition: 0.3s;
+}
+.navbar a:hover::after{
+    width: 100%;
+}
+.navbar a:hover{
+    color: white;
+}
+button:hover{
+    transition: all 0.1s;
+    color: white;
+}
+.whatsappbutton img{
+    width: 55px;
+    height: 55px;
+    position: relative;
+    bottom: 20px;
+    right: 0;
+    top: 0;
+    left: 1px;
+}
+.whatsappdiv{
+    height: 10%;
+    width: 5%;
+    position: fixed;
+    top: 75%;
+    left: 92%;
+    border: 3px solid black;
+    border-radius: 50%;
+    overflow: hidden;
+    z-index: 9999;
+}
+.positions{
+    height: auto;
+    width: auto;
+    display: flex;
+}
+.leftsidebar{
+    background-color: rgb(255, 70, 70);
+    height: 30%;
+    width: 30%;
+    position: sticky;
+    overflow: scroll;
+    margin-top: 5%;
+}
+.between{
+   background-color: rgb(78, 78, 251);
+   height: auto;
+   width: 100%;
+   margin-top: 5%;
+   
+}
+.rightsidebar{
+    background-color: rgb(255, 88, 88);
+    position: relative;
+    left: 10px;
+    height: 30%;
+    width: 30%;
+    margin-top: 5%;
+}
+
+footer{
+    background-image: linear-gradient(to right,white,red,rgb(177, 0, 0));
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    border: 1px solid black;
+    font-size: 17px;
+}
+
